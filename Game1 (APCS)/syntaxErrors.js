@@ -1,17 +1,15 @@
-function ofAKind(hand,howMany){
+function ofAKind(hand,howMany)
     hand.valueSort();
-    valueCounts = [];
+    var valueCounts = [];
     var i=0;
 
     var count = 1;
-    var highCount = count;
 
-    while(i<hand.length-1){
-        if(hand.cardAt(i).value === hand.cardAt(i+1).value)
+    while(j<hand.length-1){
+        if(hand.cardAt(i).value === han.cardAt(i+1).value)
             count++;
         else{
             valueCounts.push(count);
-
             count = 1;
         }
         i++;
@@ -20,3 +18,7 @@ function ofAKind(hand,howMany){
     
     return valueCounts.indexOf(howMany)>=0;
 }
+
+
+//Blue Master
+//819
